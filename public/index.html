@@ -9,8 +9,8 @@
 	</head>
 	<body class="text-gray-600 font-poppins">
 		<!-- Content Wrapper -->
-		<div>
-			<div>
+		<div class="grid md:grid-cols-4">
+			<div class="md:col-span-1">
 				<nav>
 					<div>
 						<h1 class="font-bold uppercase p-4 border-b border-gray-100">
@@ -32,10 +32,14 @@
 			</div>
 			<!-- End Nav -->
 
-			<main class="px-16 py-6">
-				<div>
-					<a href="#" class="text-primary">Login</a>
-					<a href="#" class="text-primary">SignUp</a>
+			<main class="px-16 py-6 bg-gray-100 md:col-span-3">
+				<div class="flex justify-center md:justify-end">
+					<a href="#" class="text-primary btn border-primary md:border-2"
+						>Login</a
+					>
+					<a href="#" class="text-primary ml-2 btn border-primary md:border-2"
+						>Signup</a
+					>
 				</div>
 
 				<header>
@@ -47,13 +51,81 @@
 					<h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
 						Latest Recipes
 					</h4>
-					<div class="mt-8">
+					<div class="mt-8 grid gap-8 md:grid-cols-3">
 						<!-- Cards -->
-						<div>
-							<img src="./img/stew.jpg" alt="stew" />
-							<div>
-								<span>5 Bean Chilli Stew</span>
-								<span>By Mario</span>
+						<div class="card">
+							<img class="card-img" src="./img/stew.jpg" alt="stew" />
+							<div class="m-4">
+								<span class="font-bold">5 Bean Chilli Stew</span>
+								<span class="block text-gray-500 textsm">By Mario</span>
+							</div>
+							<div class="badge">
+								<svg
+									class="w-5 inline-block"
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-6 w-6"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+									/>
+								</svg>
+								<span>25 mins</span>
+							</div>
+						</div>
+						<div class="card">
+							<img class="card-img" src="./img/curry.jpg" alt="curry" />
+							<div class="m-4">
+								<span class="font-bold">Yellow Veg Curry</span>
+								<span class="block text-gray-500 textsm">By Mario</span>
+							</div>
+							<div class="badge">
+								<svg
+									class="w-5 inline-block"
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-6 w-6"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+									/>
+								</svg>
+								<span>40 mins</span>
+							</div>
+						</div>
+						<div class="card">
+							<img class="card-img" src="./img/noodles.jpg" alt="noodles" />
+							<div class="m-4">
+								<span class="font-bold">Hakka Noodles</span>
+								<span class="block text-gray-500 textsm">By Mario</span>
+							</div>
+							<div class="badge">
+								<svg
+									class="w-5 inline-block"
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-6 w-6"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+									/>
+								</svg>
+								<span>15 mins</span>
 							</div>
 						</div>
 					</div>
@@ -65,8 +137,8 @@
 						<!-- Cards -->
 					</div>
 
-					<div>
-						<div class="bg-secondary-100 text-secondary-200">Load More</div>
+					<div class="flex justify-center">
+						<div class="bg-secondary-100 text-secondary-200 btn">Load More</div>
 					</div>
 				</div>
 			</main>
