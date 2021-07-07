@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.card-container {
+	@apply mt-8 grid gap-8 md:grid-cols-3;
+}
+
 .card {
 	@apply rounded bg-white overflow-hidden shadow-md relative hover:shadow-lg;
 }
@@ -21,5 +25,5 @@
 }
 
 .nav-link {
-	@apply px-4 flex justify-end;
+	@apply px-4 flex justify-end hover:text-primary transition ease-out duration-300;
 }
