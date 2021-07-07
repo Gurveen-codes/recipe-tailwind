@@ -19,3 +19,7 @@
 .btn {
 	@apply rounded-full px-2 py-1 uppercase text-xs font-bold cursor-pointer tracking-wider;
 }
+
+.nav-link {
+	@apply px-4 flex justify-end;
+}
